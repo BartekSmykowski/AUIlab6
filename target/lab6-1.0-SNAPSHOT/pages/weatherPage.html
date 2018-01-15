@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Prognoza pogody</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../styles/mainCss.css">
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="text/javascript"
+        src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDX0OjRMsgV41ul8R1Z0iabVlc1lMl7dAg"></script>
+        <script src="../scripts/map.js"></script>
+        <script src="../scripts/weather.js"></script>
+    </head>
+    <body>
+        <div id="naglowek">    
+            <a href="../index.html"><img class="logo" alt="Trefl logo" src="../images/trefl_logo.png"></a>
+            <br>
+            <h1>Trefl</h1>
+        </div>
+
+        <div id="menu">
+            <h2>Menu:</h2>
+                <h3><a href="../index.html">Strona główna</a></h3>
+                <h3 class="obecny"><a href="weatherPage.html">Prognoza pogody</a></h3>
+                <h3><a href="puzzlePage.html">Puzzle</a></h3>
+                <h3><a href="distance.html">Dystans</a></h3>
+        </div>
+
+        <div id="tresc">
+            <h1>Prognoza pogody</h1>
+            <div>
+                <p>Długość<input type="text" id="lonField"/></p>
+                <p>Szerokość:<input type="text" id="latField"/></p>
+                <p>Licba dni:<input type="text" id="cntField" value="1"/></p>
+                <button id = "getWeather" onclick = "getWeather()">Prognozuj</button>
+            </div>
+            <div id="weatherDiv">
+            </div>
+            <div id="mapDiv"></div>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,6 @@
+com\mycompany\lab6\entities\Distance.class
+com\mycompany\lab6\resources\DistanceApi.class
+com\mycompany\lab6\entities\IdSupplier.class
+com\mycompany\lab6\resources\PuzzleResource.class
+com\mycompany\lab6\entities\Puzzle.class
+com\mycompany\lab6\servlets\PuzzleContext.class

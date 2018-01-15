@@ -1,0 +1,73 @@
+body{
+    background-color: #770000;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+#mapDiv{
+    width: 400px;
+    height: 400px;
+}
+
+#weatherDiv{
+    font-size: 10px;
+    border: 1px solid #c3c3c3;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.weatherDayDiv{
+    border: 1px solid #ff0000;
+    display: inline-block;
+}
+
+.puzzleTable{
+    background-color: #aa1111;
+    border: 1px solid #c3c3c3;
+}
+
+
+div#naglowek 
+{
+    width:990px;
+    height:150px;
+    border-bottom:2px solid white;
+    text-align:center;
+}
+
+div#menu
+{
+    position:relative;
+    top: 5px;
+    float:left;
+    width:220px;
+    height: auto;
+    border-right:1px solid white;
+    border-bottom:1px solid grey;
+}
+
+div#tresc
+{
+    position: relative; 
+    left: 20px;
+    top: 50px;
+    width:750px;
+    height:auto;
+    overflow:auto;
+}
+
+h3.obecny{
+    border: 1px solid gold;
+}
+
+img.logo
+{
+    float: left;
+    width: 200px;
+    height: 145px;
+}
+
+a:link { color: white; text-decoration: none; background-color: transparent }
+a:visited { color: white; text-decoration: none; background-color: transparent }
+a:hover { color: gold; text-decoration: none; background-color: transparent }
+a:active { color: gold; text-decoration: none; background-color: transparent }
