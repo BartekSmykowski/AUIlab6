@@ -65,7 +65,9 @@ public class DistanceApi {
             request.connect();
             
             JsonParser jp = new JsonParser();
-            root = jp.parse(new InputStreamReader((InputStream) request.getContent()));
+            InputStreamReader is = new InputStreamReader((InputStream) request.getContent(), "utf-8");
+            int a = is.read();
+            root = jp.parse(is);
 
         } catch (MalformedURLException ex) {
             Logger.getLogger(PuzzleResource.class.getName()).log(Level.SEVERE, null, ex);
